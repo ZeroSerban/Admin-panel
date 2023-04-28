@@ -39,3 +39,4 @@ Pentru a continua proiectul, aveți de implementat cerințele care au fost date 
 
 4.3. Stilizați aplicația, astfel încât să arate mai frumos.
 
+# Usurelu.Serban_JavaScriptAdvancedReact_Proiect1_28.04.2023
