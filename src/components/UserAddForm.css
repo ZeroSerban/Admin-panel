@@ -5,8 +5,23 @@ h2 {
 .user-add-form {
     display: flex;
     flex-direction: column;
+    padding-left: 10px;
 }
 
 .user-add-form input {
     max-width: 50%;
+}
+
+.submit-btn {
+    width: 10%;
+    margin-left: 7px;
+    margin-bottom: 10px;
+}
+
+.check-btn {
+    width: 5%;
+}
+
+.text-input {
+    width: 30%;
 }

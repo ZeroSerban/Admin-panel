@@ -6,18 +6,25 @@ class UserAddForm extends React.Component {
         this.state = {
             name: '',
             email: '',
-            isGoldClient: false
+            isGoldClient: false,
+
+            
         };
     }
 
+     
     updateName(event) {
-        this.setState({name: event.target.value});
+        
+     this.setState({name: event.target.value})
+       
+       
     }
-
-    updateEmail(event) {
-        this.setState({email: event.target.value});
-    }
-
+       
+    
+     updateEmail (event) {
+       
+        this.setState({email: event.target.value})
+     }
     updateIsGoldClient(event) {
         this.setState({isGoldClient: event.target.checked});
     }
@@ -36,12 +43,15 @@ class UserAddForm extends React.Component {
                     type="text"
                     name="name"
                     onChange={(event) => this.updateName(event)}
+                    required
+                    className='text-input'
                 />
                 <label htmlFor="email">Email:</label>
                 <input
                     type="text"
                     name="email"
                     onChange={(event) => this.updateEmail(event)}
+                    className='text-input'
                 />
                 <label htmlFor="is-gold-client">Client GOLD</label>
                 <input
@@ -49,9 +59,10 @@ class UserAddForm extends React.Component {
                     name="is-gold-client"
                     value="true"
                     onChange={(event) => this.updateIsGoldClient(event)}
+                    className='check-btn'
                 />
 
-                <input type="submit" value="Introdu utilizatorul"/>
+                <input type="submit" value="Introdu utilizatorul" className="submit-btn"/>
             </form>
         )
     }
